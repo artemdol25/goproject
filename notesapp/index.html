@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Сервис добавления заметок</h1>
+    </header>
+    <main role="main">
+        <button id="add-note-btn" class="add-note-btn" onclick="openNoteForm()">Добавить заметку</button>
+        <div id="note-form" class="note-form">
+            <textarea id="note-text" class="note-text" placeholder="Введите текст заметки"></textarea>
+            <button class="save-note-btn" onclick="saveNote()">Сохранить</button>
+        </div>
+        <section id="notes-container" class="notes-container"></section>
+        <div id="stats-container" class="stats-container"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Долгополов Артём</p>
+    </footer>
+    <script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>
